@@ -7,8 +7,7 @@ Description: This is my report page.
 Report
 ==================
 
-## Kmom01
 
-* Question 1
+<a href="report/kmom01">Kmom01</a>
 
-* Question 2
+<a href="report/kmom02">Kmom02</a>

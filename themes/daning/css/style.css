@@ -56,6 +56,8 @@ body {
     max-width: 48em;
     padding: 0 0.5em;
     margin: 0 auto;
+    color: green;
+    /* background-color: pink; */
 }
 
 .widescreen .container {
@@ -70,9 +72,23 @@ body {
 
 /*** BASIC LAYOUT: HEADER ***/
 
+/* Header */
+
+.site-header {
+    flex: 0 0 auto;
+    background-color: green;
+    color: #2b2e30;
+    padding: 0 2em;
+}
+
+.site-header a, .site-header a:visited {
+    color: #2b2e30;
+}
+
+
 .header {
     background: #fff;
-    
+
 }
 
 .title, .logo {
@@ -161,12 +177,21 @@ body {
 /*** BASIC LAYOUT: FOOTER ***/
 
 .footer {
-    background: #707070;
-    color: #c0c0c0;
+    flex: 0 0 auto; */
+    /* background: #e74c3c; */
+    color: #2b2e30;
+    padding: 2em;
 }
 
+/* .footer {
+    background: #707070;
+    color: #c0c0c0;
+} */
+
 .footer a {
-    color: #ddd;
+    /* color: #ddd; */
+    color: #f0f0f0;
+    background: grey;
 }
 
 .footer a:hover {
@@ -176,13 +201,19 @@ body {
 .footer p {
     margin: 0;
     padding: 3em 0;
+    /* background: grey; */
 }
+
 
 .footer .social {
     float: right;
     padding: 1.5em 0 1.5em 1em;
     font-size: 2rem;
+    /* background: turquoise; */
 }
+
+
+
 
 /*** BASIC LAYOUT: EXTRA SMALL DEVICES ***/
 
@@ -247,7 +278,7 @@ body {
     text-rendering: optimizeLegibility;
     font-kerning: normal;
     color: #444;
-    
+
 }
 
 p, td, th, li, dd {
