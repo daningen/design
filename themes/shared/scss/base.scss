@@ -1,0 +1,11 @@
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables';
+@import 'layout';
+@import 'kmom01';
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    // font-family: 'Karla', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
