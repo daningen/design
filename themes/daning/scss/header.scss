@@ -1,0 +1,309 @@
+/*** BASIC LAYOUT: HEADER ***/
+
+.header {
+    // background-image: url('../img/header.jpg');
+    background-image: url('../../../assets/img/indien2.jpeg');
+    // background: $header-color;
+    // max-height: 35%;
+    // max-width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+// .header {
+//     background: #fff;
+// }
+
+.title,
+.logo {
+    float: left;
+    padding: 3em 3em 3em 0;
+}
+
+.title * {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.959);
+    // color: #111;
+}
+
+.title p {
+    font-style: italic;
+}
+
+.logo {
+    height: 10.8em;
+}
+
+.logo * {
+    display: block;
+    height: 100%;
+}
+
+.logo img {
+    min-width: 4.8em;
+}
+
+.logo + .title h1 {
+    margin: 0.8rem 0;
+}
+
+.logo + .title.tagline h1 {
+    margin: 0;
+}
+
+/* IE8 + IE9 clearfix */
+
+.header > .container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.flash-img {
+    height: 100%;
+}
+
+
+
+// @media (max-width: 767px) {
+//     .image.xsmall {
+//         width: 60%;
+//     }
+
+//     .image.small {
+//         width: 80%;
+//     }
+
+//     .image.large,
+//     .image.xlarge {
+//         width: 100%;
+//     }
+
+//     .image.float-left,
+//     .image.float-right {
+//         float: none;
+//         margin: 0 auto;
+//     }
+// }
+
+/*** TABLES ***/
+
+table {
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0.4em 1em;
+    vertical-align: top;
+}
+
+th {
+    font-weight: bold;
+    text-align: center;
+    background: #f5f5f5;
+    color: #333;
+}
+
+td,
+th {
+    border: 1px solid #ccc;
+}
+
+tr:not(:last-child) td,
+tr:not(:last-child) th {
+    border-bottom: 0 none;
+}
+
+thead tr:last-child th {
+    border-bottom: 0 none;
+}
+
+td:not(:last-child),
+th:not(:last-child) {
+    border-right: 0 none;
+}
+
+tr:first-child td:first-child,
+tr:first-child th:first-child {
+    border-top-left-radius: 0.3em;
+}
+
+tr:first-child td:last-child,
+tr:first-child th:last-child {
+    border-top-right-radius: 0.3em;
+}
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 0.3em;
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 0.3em;
+}
+
+table thead + tbody tr:first-child td {
+    border-radius: 0 !important;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table-responsive > table {
+    margin-bottom: 0;
+}
+
+/*** LISTS ***/
+
+ol,
+ul {
+    list-style-position: outside;
+    padding-left: 1.5em;
+}
+
+ol {
+    padding-left: 2.5em;
+}
+
+li {
+    padding-left: 0.5em;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 2em;
+}
+
+/*** CODE ***/
+
+code {
+    margin: 0 0.1em;
+    padding: 0.1em 0.2em;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    background: #f5f5f5;
+    font-family: monospace;
+    font-size: 0.85rem;
+    line-height: 1.9824;
+}
+
+pre {
+    padding: 0 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    background: #f5f5f5;
+}
+
+pre code {
+    display: block;
+    margin: 0;
+    padding: 1.1111em 0;
+    border: 0 none;
+    background: transparent;
+    overflow-x: auto;
+    line-height: 1.4;
+}
+
+/*** BLOCKQUOTE ***/
+
+blockquote {
+    font-style: italic;
+    margin-left: 1em;
+    padding-left: 1em;
+    border-left: 0.5em solid #f5f5f5;
+}
+
+/*** FORMS ***/
+
+label,
+fieldset legend {
+    font-weight: bold;
+}
+
+input:not([type='checkbox']):not([type='radio']),
+button,
+select,
+textarea,
+fieldset,
+fieldset legend {
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    background: #fff;
+    transition: none 0.2s ease-in;
+    transition-property: border-color, background, box-shadow;
+}
+
+input:not([type='checkbox']):not([type='radio']),
+button,
+select,
+textarea {
+    padding: 0.5em 1em;
+    outline: 0 none;
+    font-size: 1rem;
+}
+
+input:focus:not([type='checkbox']):not([type='radio']),
+button:focus,
+select:focus,
+textarea:focus {
+    border-color: #2eae9b;
+    box-shadow: 0 0 8px #2eae9b;
+}
+
+input:focus,
+button:focus,
+button:hover {
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+textarea,
+select {
+    vertical-align: bottom;
+    overflow: auto;
+}
+
+fieldset {
+    padding: 1em;
+    background: #f5f5f5;
+}
+
+fieldset legend {
+    padding: 0 0.5em;
+}
+
+fieldset label,
+fieldset input,
+fieldset button,
+fieldset select,
+fieldset textarea {
+    margin: 0.2em 0.5em;
+}
+
+fieldset label:first-child,
+fieldset input:first-child,
+fieldset button:first-child,
+fieldset select:first-child,
+fieldset textarea:first-child {
+    margin-left: 0;
+}
+
+fieldset label:last-child,
+fieldset input:last-child,
+fieldset button:last-child,
+fieldset select:last-child,
+fieldset textarea:last-child {
+    margin-right: 0;
+}
+
+/* Firefox input size fix */
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}

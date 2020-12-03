@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="no-js">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,26 +7,27 @@
     <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
 
     {% if meta.description %}
-    <meta name="description" content="{{ meta.description|striptags }}" />
+        <meta name="description" content="{{ meta.description|striptags }}" />
     {% endif %}
     {% if meta.robots %}
-    <meta name="robots" content="{{ meta.robots }}" />
+        <meta name="robots" content="{{ meta.robots }}" />
     {% endif %}
 
-    {% if current_page %}
-    <link rel="canonical" href="{{ current_page.url }}" />
+    {# {% if current_page %}
+        <link rel="canonical" href="{{ current_page.url }}" />
     {% endif %}
 
-    {# <link rel="stylesheet" href="{{ theme_url }}/../shared/css/font-awsome.min.css" type="text/css" /> #}
-    <!-- Insert font choice here -->
-    {# <link rel="stylesheet" href="{{ theme_url }}/../shared//css/dorid-sans.css" type="text/css" /> #}
-    <!-- End -->
+    {% if config.session.theme == "dark" %}
+        <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.min.css" type="text/css" />
+    {% else %}
+        <link rel="stylesheet" href="{{ theme_url }}/css/style.min.css" type="text/css" />
+    {% endif %} #}
+    
     <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
 
 </head>
 <!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
-<body{% if config.theme_config.widescreen %} class="widescreen" {% endif %}>
-
+<body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
     <div class="header" role="banner">
         <div class="container">
             <a class="nav-toggle" id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
@@ -70,15 +70,23 @@
             </div> #}
         </div>
     </div>
-    
     <div class="main" role="main">
-        <div class="container">
-            <h1>Design - godis för alla</h1>
-            {{ content }}
+        <div class="report-container">
+            <div class="sidebar">
+                <a href="kmom01" {% if current_page.id == "report/kmom01" %} class="active"{% endif %}>Kmom01</a>
+                <a href="kmom02" {% if current_page.id == "report/kmom02" %} class="active"{% endif %}>Kmom02</a>
+                <a href="kmom03" {% if current_page.id == "report/kmom03" %} class="active"{% endif %}>Kmom03</a>
+                <a href="kmom04" {% if current_page.id == "report/kmom04" %} class="active"{% endif %}>Kmom04</a>
+                <a href="kmom05" {% if current_page.id == "report/kmom05" %} class="active"{% endif %}>Kmom05</a>
+                <a href="kmom06" {% if current_page.id == "report/kmom06" %} class="active"{% endif %}>Kmom06</a>
+                <a href="kmom10" {% if current_page.id == "report/kmom10" %} class="active"{% endif %}>Kmom10</a>
+            </div>
+            <div class="report">
+                {{ content }}
+            </div>
         </div>
-        
     </div>
-    <div class="footer">
+   <div class="footer">
     <div class="container">
         <div class="social">
             <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
@@ -98,6 +106,5 @@
     <script src="{{ theme_url }}/../shared//js/modernizr-3.3.1-custom.min.js" type="text/javascript"></script>
     <script src="{{ theme_url }}/../shared//js/utils.js" type="text/javascript"></script>
     <script src="{{ theme_url }}/../shared//js/responsive-navbar.js" type="text/javascript"></script>
-    </body>
-
+</body>
 </html>

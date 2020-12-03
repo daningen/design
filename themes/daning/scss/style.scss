@@ -1,2 +1,28 @@
-@import '../../shared/scss/base';
+@import 'common';
+@import 'variables';
+@import 'typography';
+// @import '../../shared/scss/base';
+
+@import 'header';
+@import 'kmom';
+@import 'layout';
+@import 'footer';
+@import 'report';
+// @import 'media';
+
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    // font-family: 'Karla', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
 

@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
     "style": "sass daning/scss/style.scss daning/css/style.css --no-source-map",
-    "style-min": "sass daning/scss/style.scss daning/css/style.min.css --no-source-map --style compressed"
+    "style-min": "sass daning/scss/style.scss daning/css/style.min.css --no-source-map --style compressed",
+    "watch": "sass daning/scss/style.scss daning/css/style.css --no-source-map --watch",
+    "watch-min": "sass daning/scss/style/style.scss daning/css/style.min.css —no-source-map --style compressed --watch"
   },
   "keywords": [],
   "author": "",

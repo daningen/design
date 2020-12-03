@@ -1,0 +1,164 @@
+/*** TYPOGRAPHY ***/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+    color: #444;
+}
+
+p,
+td,
+th,
+li,
+dd {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+p,
+hr,
+table,
+.table-responsive,
+ol,
+ul,
+dl,
+dd,
+pre,
+blockquote,
+fieldset {
+    margin-bottom: 1em;
+}
+
+.extra {
+    font-size: 150%;
+    color: $text-color;
+}
+
+.extra2 {
+    font-size: 150%;
+    color: $text-color2;
+}
+
+a {
+    color: #302eae;
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+}
+
+a:hover {
+    color: #444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.6em;
+    font-weight: bold;
+    color: #333;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    border: 0.15em solid #f5f5f5;
+    border-radius: 0.3em;
+    background: #f5f5f5;
+}
+
+abbr {
+    text-decoration: underline dotted;
+}
+
+/*** UTILITIES ***/
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+.image {
+    display: block;
+    margin: 0 auto;
+}
+
+.image.xsmall {
+    width: 20%;
+}
+
+.image.small {
+    width: 40%;
+}
+
+.image.large {
+    width: 60%;
+}
+
+.image.xlarge {
+    width: 80%;
+}
+
+.image.float-left {
+    float: left;
+    margin: 1em 2em 1em 0;
+}
+
+.image.float-right {
+    float: right;
+    margin: 1em 0 1em 2em;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+}
