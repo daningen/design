@@ -10,7 +10,7 @@ Kursmoment 3
 <b>Hur har det gått att jobba med CSS-Grid/Flexbox?</b>
 <p>En hel del trixande men det är riktigt kraftfullt när man får det att fungera. </p>
 
-<b>Har du jobbat med dessa tekniker sedan tidigare? Vad anser du om det?
+<b>Har du jobbat med dessa tekniker sedan tidigare? Vad anser du om det?</b>
 <p>Har stött på det och använt mig av Grid i tidigare kurser men inte hunnit ta till mig allt. </p>
 
 

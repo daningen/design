@@ -17,15 +17,7 @@ Report
         </div>
     </a>
 </div>
-<div class="kmom-box">
-    <a href="report/kmom02">
-        <div class="kmom-link">
-            <h3>Kmom02</h3>
-            <p> SASS, typografi och Font Awesome.</p>
-            <i class="fas fa-chevron-circle-right"></i>
-        </div>
-    </a>
-</div>
+
 <div class="kmom-box">
     <a href="report/kmom02">
         <div class="kmom-link">
