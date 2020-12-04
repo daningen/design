@@ -137,9 +137,21 @@ p {
         grid-column: span 1;
     }
 
+    .project {
+        margin-bottom: 1em;
+    }
+
+    .report-container {
+        grid-template-columns: 12fr;
+    }
+
     .kmom-link {
         grid-template-columns: auto;
         grid-template-rows: auto;
+    }
+    
+    .sidebar {
+        display: none !important;
     }
 }
 

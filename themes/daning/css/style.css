@@ -1202,7 +1202,7 @@ button::-moz-focus-inner {
 
   .footer p {
     padding: 1em 0;
-    color: #04c444;
+    color: #f2faf5;
   }
 
   .footer .social {
@@ -1683,9 +1683,21 @@ p {
     grid-column: span 1;
   }
 
+  .project {
+    margin-bottom: 1em;
+  }
+
+  .report-container {
+    grid-template-columns: 12fr;
+  }
+
   .kmom-link {
     grid-template-columns: auto;
     grid-template-rows: auto;
+  }
+
+  .sidebar {
+    display: none !important;
   }
 }
 /*!
