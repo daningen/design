@@ -8,23 +8,51 @@
 .landingpage h1 {
     grid-column: span 3;
     justify-self: center;
+    color: $text-color;
 }
 
 .kmom-box {
+    width: 100%;
     grid-column: span 1; //denna gör ingen skillnad men visar ändå tydligt att den är en kolumn endast
     border: 1px solid rgb(0, 0, 0, 0.3);
-    // background-color:$header-color-lighten;
-    // background-color: rgb(221, 173, 181);
-
+    background-color: $box-header-color-lighten;
     display: flex;
-    // background-color: $header-color;
     flex-direction: column;
-    // align-items: center;
-    // padding: 2em;
+
+    p {
+        padding: 1.5em 0.5em;
+        margin: 0;
+    }
+
+    a {
+        // width: 100%;
+        // background-color: pink;
+        margin: 0;
+        text-align: center;
+        
+        // h2 {
+        //     margin-top: 0.6em;
+        // }
+    }
 }
 
+// .kmom-box a {
+//     // width: 100%;
+//     // background-color: $accent-color;//check this
+//     text-align: center;
+
+//     h2 {
+//         margin-top: 0.6em;
+//     }
+// }
+
+
+
+
+
 h3 {
-    background-color: $header-color;
+    // background-color: $box-header-color;
+    // background-color: $box-header-color-darken-40;
     // background-color: $link-color;
     // border-radius: 10px 10px 0 0;
     padding: 1em;
@@ -33,13 +61,17 @@ h3 {
 p {
     color: $link-color-visited;
     // width: 20vw;
-    color: rgb(14, 42, 117);
+    color: rgb(179, 188, 214);
     padding: 1em;
 }
 
-// .kmom-box a {
-//     // text-decoration: underline;
-// }
+.kmom-box a {
+    // text-decoration: underline;
+
+    p {
+        color: $text-color;
+    }
+}
 
 .kmom-link {
     display: grid;
@@ -50,6 +82,7 @@ p {
         grid-column: span 3;
         text-align: center;
         color: rgba(255, 255, 255, 0.945);
+        background-color: $box-header-color;
     }
 
     p {
@@ -64,6 +97,7 @@ p {
         font-size: 3em;
         // // text-align: center;
         padding: 0.1em;
+        color: $box-logo-color;
     }
 }
 
@@ -107,7 +141,7 @@ p {
     padding: 0.5em;
     // color: $font-color;
     // color: $nav-color;
-    color: #466a7a;
+    color: $text-color;
 
 
     // color: pink;
@@ -155,23 +189,3 @@ p {
     }
 }
 
-
-// @media (max-width: 767px) {
-//     .landingpage h1,
-//     .kmom-box,
-//     .kmom-box.project {
-//         grid-column: span 3;
-//     }
-
-//     .project {
-//         margin-bottom: 1em;
-//     }
-
-//     .report-container {
-//         grid-template-columns: 12fr;
-//     }
-
-//     .sidebar {
-//         display: none !important;
-//     }
-// }

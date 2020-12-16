@@ -75,13 +75,9 @@
     <div class="main" role="main">
         <div class="report-container">
             <div class="sidebar">
-                <a href="kmom01" {% if current_page.id == "report/kmom01" %} class="active"{% endif %}>Kmom01</a>
-                <a href="kmom02" {% if current_page.id == "report/kmom02" %} class="active"{% endif %}>Kmom02</a>
-                <a href="kmom03" {% if current_page.id == "report/kmom03" %} class="active"{% endif %}>Kmom03</a>
-                <a href="kmom04" {% if current_page.id == "report/kmom04" %} class="active"{% endif %}>Kmom04</a>
-                <a href="kmom05" {% if current_page.id == "report/kmom05" %} class="active"{% endif %}>Kmom05</a>
-                <a href="kmom06" {% if current_page.id == "report/kmom06" %} class="active"{% endif %}>Kmom06</a>
-                <a href="kmom10" {% if current_page.id == "report/kmom10" %} class="active"{% endif %}>Kmom10</a>
+                <a href="01_colors" {% if current_page.id == "analysis/01_colors" %} class="active"{% endif %}>Colors</a>
+                <a href="02_load" {% if current_page.id == "analysis/02_load" %} class="active"{% endif %}>Load Time</a>
+                <a href="03_design-principles" {% if current_page.id == "analysis/03_design-principles" %} class="active"{% endif %}>Design Principles</a>
             </div>
             <div class="report">
                 {{ content }}

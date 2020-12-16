@@ -42,7 +42,7 @@ Report
     <a href="report/kmom04">
         <div class="kmom-link">
             <h3>Kmom04</h3>
-            <p> Introduktion till design.</p>
+            <p> Dark mode och analys av olika webbplatser. Monokromatiskt färgschema mm.</p>
             <i class="fas fa-chevron-circle-right"></i>
         </div>
     </a>

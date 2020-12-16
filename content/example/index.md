@@ -1,7 +1,7 @@
 ---
 Title: Example
 Description: Markdown examples.
-icon: fa fa-bell
+# icon: fa fa-bell
 # hidden: true
 ---
 

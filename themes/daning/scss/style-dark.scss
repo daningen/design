@@ -1,6 +1,6 @@
 @import 'common';
 
-@import 'variables';
+@import 'variables-dark';
 @import 'typography';
 // @import '../../shared/scss/base';
 
@@ -32,6 +32,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
     border: 0 none;
     margin: 0;
     padding: 0;
+    color: $text-color;
 }
 
 *:focus {
@@ -75,10 +76,10 @@ body {
     background-color: $background-color;
 }
 
-.header,
-// .footer {
-//     flex: 0 0 auto;
-// }
+.header {
+    flex: 0 0 auto;
+    filter: grayscale(54%);
+}
 
 .main {
     padding: 5em 0 4em;

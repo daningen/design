@@ -36,6 +36,7 @@ pre,
 blockquote,
 fieldset {
     margin-bottom: 1em;
+    
 }
 
 .extra {
@@ -49,7 +50,7 @@ fieldset {
 }
 
 a {
-    color: #302eae;
+    color: $font-color;
     text-decoration: none;
     transition: color 0.2s ease-in;
 }
@@ -66,7 +67,7 @@ h5,
 h6 {
     margin-bottom: 0.6em;
     font-weight: bold;
-    color: #333;
+    color: $header-color;
 }
 
 h1 {
@@ -109,56 +110,3 @@ abbr {
     text-decoration: underline dotted;
 }
 
-/*** UTILITIES ***/
-
-.align-left {
-    text-align: left;
-}
-
-.align-center {
-    text-align: center;
-}
-
-.align-right {
-    text-align: right;
-}
-
-.align-justify {
-    text-align: justify;
-}
-
-.image {
-    display: block;
-    margin: 0 auto;
-}
-
-.image.xsmall {
-    width: 20%;
-}
-
-.image.small {
-    width: 40%;
-}
-
-.image.large {
-    width: 60%;
-}
-
-.image.xlarge {
-    width: 80%;
-}
-
-.image.float-left {
-    float: left;
-    margin: 1em 2em 1em 0;
-}
-
-.image.float-right {
-    float: right;
-    margin: 1em 0 1em 2em;
-}
-
-.image img {
-    display: block;
-    width: 100%;
-}
