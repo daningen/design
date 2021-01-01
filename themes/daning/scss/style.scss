@@ -2,6 +2,7 @@
 
 @import 'variables';
 @import 'typography';
+@import 'responsive';
 // @import '../../shared/scss/base';
 
 @import 'header';
@@ -9,7 +10,7 @@
 @import 'layout';
 @import 'footer';
 @import 'report';
-// @import 'media';
+@import 'gallery';
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';

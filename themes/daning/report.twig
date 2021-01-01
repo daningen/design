@@ -55,17 +55,16 @@
                 <div id="nav" role="navigation" tabindex="-1">
                     <ul>
                         {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
-
-                        <li{% if page.id == current_page.id %} class="active" {% endif %}>
-                            <a href="{{ page.url }}">
-                                {% if page.meta.icon %}
-                                <i class="{{ page.meta.icon }}"></i>
-                                {% else %}
-                                {{ page.title }}
-                                {% endif %}
-                            </a>
+                            <li{% if page.id == current_page.id %} class="active"{% endif %}>
+                                <a href="{{ page.url }}" {% if page.meta.icon %} aria-label="{{ page.title }}"{% endif %}>
+                                    {% if page.meta.icon %}
+                                        <i class="{{ page.meta.icon }}"></i>
+                                    {% else %}
+                                        {{ page.title }}
+                                    {% endif %}
+                                </a>
                             </li>
-                            {% endfor %}
+                        {% endfor %}
                     </ul>
                 </div>
             </div>

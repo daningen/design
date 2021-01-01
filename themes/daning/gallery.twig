@@ -1,0 +1,18 @@
+{% include 'incl/header.twig' %}
+    <div class="main" role="main">
+        <div class="gallery">
+            {% for image in meta.images %}
+                <div>
+                    <a href="{{ base_url }}/image/gallery/{{ image.url }}" target="_blank">
+                        <picture>
+                            <source media="(min-width: 668px)" srcset="{{ base_url }}/image/gallery/{{ image.url }}">
+                            <source media="(min-width: 376px)" srcset="{{ base_url }}/image/gallery/{{ image.url }}&w=667">
+                            <img src="{{ base_url }}/image/gallery/{{ image.url }}&w=375" alt="{{ image.alt }}">
+                        </picture>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+{% include 'incl/footer.twig' %}
