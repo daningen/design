@@ -3,12 +3,12 @@ $base-color: #c6538c; // light pink
 $border-dark: rgba($base-color, 0.88) !default;
 $alert-box-size: 200px !default;
 
-$text-color: #033a32 !default;
+// $text-color: #033a32 !default;
 $line-color: #2eae9b;
 
 $text-color2: #04c444 !default;
 // $header-color: rgba(32, 43, 67, 0.1);
-$header-color: rgb(100, 129, 129);
+$header-color: rgb(4, 194, 194);
 
 $header-color-darken: ($header-color, 5%);
 $header-color-darken-40: ($header-color, 40%);
@@ -27,15 +27,15 @@ $link-color: #24a1a1;
 $link-color-visited: lighten($link-color, 70%);
 $nav-color: #345252;
 
-//nedan hämtade från Aurora
-$font-alternative-color: rgb(241, 241, 241);
+$code-color: #f1bbf1;
+// $font-alternative-color: rgb(241, 241, 241);
 
 $accent-color: rgba(217, 100, 70, 100);
 $font-color: #24a1a1;
 $background-alternative-color: rgba(255, 255, 255, 0.1);
 
 $background-color: rgb(40, 40, 40);
-$text-color: rgb(250, 245, 245);
+$text-color: rgb(250, 250, 250);
 
-$footer-background: rgb(100, 129, 129);
+$footer-background: rgb(59, 104, 104);
 

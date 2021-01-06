@@ -61,7 +61,8 @@ h3 {
 p {
     color: $link-color-visited;
     // width: 20vw;
-    color: rgb(179, 188, 214);
+    // color: rgb(168, 188, 250);
+    color: $text-color;
     padding: 1em;
 }
 
@@ -78,7 +79,7 @@ p {
     grid-template-columns: 40% 40% auto;
     grid-template-rows: 6em 6em auto;
 
-    h3 {
+    h2 {
         grid-column: span 3;
         text-align: center;
         color: rgba(255, 255, 255, 0.945);
