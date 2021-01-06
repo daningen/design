@@ -11,7 +11,7 @@ Analys
 <div class="kmom-box">
     <a href="analysis/01_colors">
         <div class="kmom-link">
-            <h3>Färg</h3>
+            <h2>Färg</h2>
             <p> Analys av webbplatsers olika färgval.</p>
             <i class="fas fa-chevron-circle-right"></i>
         </div>
@@ -21,7 +21,7 @@ Analys
 <div class="kmom-box">
     <a href="analysis/02_load">
         <div class="kmom-link">
-            <h3>Prestanda</h3>
+            <h2>Prestanda</h2>
             <p> Analys av hur lång tid det tar att ladda upp sidorna.</p>
             <i class="fas fa-chevron-circle-right"></i>
         </div>
@@ -31,7 +31,7 @@ Analys
 <div class="kmom-box">
     <a href="analysis/03_design-principles">
         <div class="kmom-link">
-            <h3>Designval</h3>
+            <h2>Designval</h2>
             <p> Analys av webbsidans designprinciper</p>
             <i class="fas fa-chevron-circle-right"></i>
         </div>
