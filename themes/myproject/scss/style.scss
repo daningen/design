@@ -1,0 +1,103 @@
+@import 'common';
+
+@import 'variables';
+@import 'typography';
+@import 'responsive';
+// @import '../../shared/scss/base';
+
+@import 'header';
+@import 'navigation';
+@import 'layout';
+@import 'footer';
+@import 'report';
+@import 'about';
+@import 'gallery';
+@import 'code';
+
+// @import '../../shared/fontawesome/scss/fontawesome';
+// $fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+// @import '../../shared/scss/code';
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    // font-family: 'Karla', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0 none;
+}
+
+.slide {
+    overflow-y: hidden !important;
+    transition: height 0.5s ease-in !important;
+}
+
+/*** BASIC LAYOUT ***/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+    background-color: $background-color;
+}
+
+.header,
+// .footer {
+//     flex: 0 0 auto;
+// }
+
+.main {
+    padding: 5em 0 4em;
+}
+
+.container {
+    max-width: 48em;
+    padding: 0 0.5em;
+    margin: 0 auto;
+}
+
+.widescreen .container {
+    max-width: 72em;
+}
+
+

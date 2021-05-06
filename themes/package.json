@@ -6,14 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "watch": "sass daning/scss/style.scss:daning/css/style.css daning/scss/style-dark.scss:daning/css/style-dark.css --no-source-map --watch",
-    "watch-min": "sass daning/scss/style.scss:daning/css/style.min.css daning/scss/style-dark.scss:daning/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "watch": "sass myproject/scss/style.scss:myproject/css/style.css myproject/scss/style-dark.scss:myproject/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass myproject/scss/style.scss:myproject/css/style.min.css myproject/scss/style-dark.scss:myproject/css/style-dark.min.css --no-source-map --watch --style compressed",
     "style": "npm run style-light && npm run style-dark",
     "style-min": "npm run style-light-min && npm run style-dark-min",
-    "style-light": "sass daning/scss/style.scss daning/css/style.css --no-source-map",
-    "style-light-min": "sass daning/scss/style.scss daning/css/style.min.css --no-source-map --style compressed",
-    "style-dark": "sass daning/scss/style-dark.scss daning/css/style-dark.css --no-source-map",
-    "style-dark-min": "sass daning/scss/style-dark.scss daning/css/style-dark.min.css --no-source-map --style compressed"
+    "style-light": "sass myproject/scss/style.scss myproject/css/style.css --no-source-map",
+    "style-light-min": "sass myproject/scss/style.scss myproject/css/style.min.css --no-source-map --style compressed",
+    "style-dark": "sass myproject/scss/style-dark.scss myproject/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass myproject/scss/style-dark.scss myproject/css/style-dark.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",

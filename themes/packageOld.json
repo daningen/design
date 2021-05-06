@@ -1,0 +1,30 @@
+{
+  "name": "themes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint \"**/*.scss\"",
+    "watch": "sass daning/scss/style.scss:daning/css/style.css daning/scss/style-dark.scss:daning/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass daning/scss/style.scss:daning/css/style.min.css daning/scss/style-dark.scss:daning/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "style": "npm run style-light && npm run style-dark",
+    "style-min": "npm run style-light-min && npm run style-dark-min",
+    "style-light": "sass daning/scss/style.scss daning/css/style.css --no-source-map",
+    "style-light-min": "sass daning/scss/style.scss daning/css/style.min.css --no-source-map --style compressed",
+    "style-dark": "sass daning/scss/style-dark.scss daning/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass daning/scss/style-dark.scss daning/css/style-dark.min.css --no-source-map --style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.29.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-sass-guidelines": "^7.1.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1"
+  }
+}

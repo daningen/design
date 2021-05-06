@@ -1,0 +1,33 @@
+// $base-color: #00f !default; // blue
+$base-color: #c6538c; // light pink
+$border-dark: rgba($base-color, 0.88) !default;
+$alert-box-size: 200px !default;
+
+$text-color: #045e1f !default;
+$line-color: #2eae9b;
+
+$text-color2: #00020776 !default;
+$header-color: #045e1f;
+$footer-text-color: #f2faf5 !default;
+// $header-color: #24a1a1;
+$header-color-lighten: lighten($header-color, 20%);
+$link-color: #24a1a1;
+$link-color-visited: lighten($link-color, 70%);
+$nav-color: #345252;
+
+$box-header-color: #045e1f;
+$box-header-color-lighten: lighten($box-header-color, 85%);
+$box-header-color-darken-40: ($box-header-color, 40%);
+$box-header-color-darken-20: ($box-header-color, 20%);
+$box-logo-color: rgb(4, 100, 33);
+
+$code-color: #660c2f;
+$font-alternative-color: rgb(241, 241, 241);
+
+$accent-color: rgba(217, 100, 70, 100);
+$font-color: #197676;
+$background-alternative-color: rgba(255, 255, 255, 0.1);
+
+$background-color: rgb(256, 256, 256);
+
+$footer-background: #045e1f;

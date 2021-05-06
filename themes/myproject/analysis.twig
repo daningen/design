@@ -1,0 +1,14 @@
+{% include 'incl/header.twig' %}
+    <div class="main" role="main">
+        <div class="report-container">
+            <div class="sidebar">
+                <a href="01_colors" {% if current_page.id == "analysis/01_colors" %} class="active"{% endif %}>Colors</a>
+                <a href="02_load" {% if current_page.id == "analysis/02_load" %} class="active"{% endif %}>Load Time</a>
+                <a href="03_design-principles" {% if current_page.id == "analysis/03_design-principles" %} class="active"{% endif %}>Design Principles</a>
+            </div>
+            <div class="report">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+{% include 'incl/footer.twig' %}
